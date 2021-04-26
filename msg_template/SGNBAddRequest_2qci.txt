@@ -1,0 +1,131 @@
+initiatingMessage : {
+  procedureCode 27,
+  criticality reject,
+  value SgNBAdditionRequest: {
+    protocolIEs {
+      {
+        id 111,
+        criticality reject,
+        value UE-X2AP-ID: 3
+      },
+      {
+        id 248,
+        criticality reject,
+        value NRUESecurityCapabilities: {
+          nRencryptionAlgorithms '0180'H,
+          nRintegrityProtectionAlgorithms '0270'H
+        }
+      },
+      {
+        id 203,
+        criticality reject,
+        value SgNBSecurityKey: '0A0B0C0D0E0F101112131415161718191A1B1C1D1E1F20212223242526272829'H
+      },
+      {
+        id 204,
+        criticality reject,
+        value UEAggregateMaximumBitRate: {
+          uEaggregateMaximumBitRateDownlink 600000000,
+          uEaggregateMaximumBitRateUplink 600000000
+        }
+      },
+      {
+        id 269,
+        criticality ignore,
+        value PLMN-Identity: '00F170'H
+      },
+      {
+        id 205,
+        criticality reject,
+        value E-RABs-ToBeAdded-SgNBAddReqList: {
+          {
+            id 209,
+            criticality reject,
+            value E-RABs-ToBeAdded-SgNBAddReq-Item: {
+              e-RAB-ID 5,
+              drb-ID 1,
+              en-DC-ResourceConfiguration {
+                pDCPatSgNB present,
+                mCGresources present,
+                sCGresources present
+              },
+              resource-configuration sgNBPDCPpresent : {
+                full-E-RAB-Level-QoS-Parameters {
+                  qCI 9,
+                  allocationAndRetentionPriority {
+                    priorityLevel 15 -- no-priority --,
+                    pre-emptionCapability may-trigger-pre-emption,
+                    pre-emptionVulnerability pre-emptable
+                  }
+                },
+                s1-UL-GTPtunnelEndpoint {
+                  transportLayerAddress 'AC1E0102'H,
+                  gTP-TEID '00002DBB'H
+                },
+                iE-Extensions {
+                  {
+                    id 317,
+                    criticality ignore,
+                    extensionValue RLCMode: rlc-um-bidirectional
+                  }
+                }
+              }
+            }
+          },
+          {
+            id 209,
+            criticality reject,
+            value E-RABs-ToBeAdded-SgNBAddReq-Item: {
+              e-RAB-ID 5,
+              drb-ID 1,
+              en-DC-ResourceConfiguration {
+                pDCPatSgNB present,
+                mCGresources present,
+                sCGresources present
+              },
+              resource-configuration sgNBPDCPpresent : {
+                full-E-RAB-Level-QoS-Parameters {
+                  qCI 9,
+                  allocationAndRetentionPriority {
+                    priorityLevel 15 -- no-priority --,
+                    pre-emptionCapability may-trigger-pre-emption,
+                    pre-emptionVulnerability pre-emptable
+                  }
+                },
+                s1-UL-GTPtunnelEndpoint {
+                  transportLayerAddress 'AC1E0102'H,
+                  gTP-TEID '00002DBB'H
+                },
+                iE-Extensions {
+                  {
+                    id 317,
+                    criticality ignore,
+                    extensionValue RLCMode: rlc-um-bidirectional
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        id 206,
+        criticality reject,
+        value MeNBtoSgNBContainer: '0000'H
+      },
+      {
+        id 275,
+        criticality ignore,
+        value SubscriberProfileIDforRFP: 64
+      },
+      {
+        id 279,
+        criticality reject,
+        value ECGI: {
+          pLMN-Identity '00F170'H,
+          eUTRANcellIdentifier '0006F00'H
+        }
+      }
+    }
+  }
+}

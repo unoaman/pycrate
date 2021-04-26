@@ -1,0 +1,62 @@
+successfulOutcome : {
+  procedureCode 36,
+  criticality reject,
+  value ENDCX2SetupResponse: {
+    protocolIEs {
+      {
+        id 246,
+        criticality reject,
+        value RespondingNodeType-EndcX2Setup: respond-en-gNB : {
+          {
+            id 252,
+            criticality reject,
+            value GlobalGNB-ID: {
+              pLMN-Identity '00F170'H,
+              gNB-ID gNB-ID : '0000009'H
+            }
+          },
+          {
+            id 253,
+            criticality reject,
+            value ServedNRcellsENDCX2ManagementList: {
+              {
+                servedNRCellInfo {
+                  nrpCI 1,
+                  nrCellID {
+                    pLMN-Identity '00F170'H,
+                    nRcellIdentifier '000000901'H
+                  },
+                  fiveGS-TAC '000000'H,
+                  configured-TAC '0000'H,
+                  broadcastPLMNs {
+                    '00F170'H
+                  },
+                  nrModeInfo tdd : {
+                    nRFreqInfo {
+                      nRARFCN 2080219,
+                      freqBandListNr {
+                        {
+                          freqBandIndicatorNr 4,
+                          supportedSULBandList { }
+                        },
+                        {
+                          freqBandIndicatorNr 5,
+                          supportedSULBandList { }
+                        }
+                      }
+                    },
+                    nR-TxBW {
+                      nRSCS scs15,
+                      nRNRB nrb93
+                    }
+                  },
+                  measurementTimingConfiguration '0A0B0C0D0E0F101112131415161718191A1B1C1D'H
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

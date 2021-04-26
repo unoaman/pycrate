@@ -1,0 +1,995 @@
+    1  ./configure --enable-python3interp=yes --with-features=huge --enable-multibyte --enable-perlinterp
+    2  yum install libncurses-devel
+    3  yum install libncurses
+    4  yum list ncurses
+    5  yum list ncurses-devel
+    6  yum install ncurses-devel
+    7  ./configure --enable-python3interp=yes --with-features=huge --enable-multibyte --enable-perlinterp
+    8  make -j16
+    9  ./configure --enable-python3interp=yes --with-features=huge --enable-multibyte
+   10  make -j16
+   11  make install
+   12  vim
+   13  vim -V
+   14  pwd
+   15  cd ../
+   16  ./configure --enable-python3interp=yes --with-features=huge --enable-multibyte
+   17  ls
+   18  cd vim/
+   19  make clean
+   20  make
+   21  lscpu 
+   22  make -j4
+   23  make install
+   24  vim
+   25  which vim
+   26  /usr/local/bin/vim
+   27  vim
+   28  jobs
+   29  fg 1
+   30  vim
+   31  ls ~/.viminfo 
+   32  lsmod | lksctp
+   33  lsmod |grep  lksctp
+   34  netsta aup | grep 36422
+   35  netstat aup | grep 36422
+   36  netstat -aup | grep 36422
+   37  netstat -ap | grep 36422
+   38  netstat -anp | grep 36422
+   39  wget https://2.na.dl.wireshark.org/src/wireshark-3.2.5.tar.xz
+   40  yum install curl wget tree 
+   41  wget https://2.na.dl.wireshark.org/src/wireshark-3.2.5.tar.xz
+   42  ls
+   43  tar -xvf wireshark-3.2.5.tar.xz 
+   44  find wireshark-3.2.5 *.asn
+   45  find wireshark-3.2.5 -name *.asn
+   46  find wireshark-3.2.5 -name *.as
+   47  find wireshark-3.2.5 -name *.ASN
+   48  find wireshark-3.2.5 -name *3gpp*
+   49  find wireshark-3.2.5 -name *36423*
+   50  cd wireshark-3.2.5
+   51  ls
+   52  cd tools/
+   53  ls
+   54  ls *.sh
+   55  ./rpm-setup.sh 
+   56  cd ..
+   57  mkdir build
+   58  cd build/
+   59  cmake ../
+   60  yum install cmake3
+   61  cmake3 ../
+   62  yum install gcrypt-devel
+   63  yum -y install libgcrypt-devel
+   64  cmake3 ../
+   65  make -j 8
+   66  find . -name *.asn
+   67  cd ..
+   68  find . -name *.asn
+   69  find . -name *.asn | grep x2
+   70  find . -name asn
+   71  find . -name asn*
+   72  find . -name *asn*
+   73  find . -name "*asn*"
+   74  find . -name "*asn*" | grep -v ".asn"
+   75  find . -name "*asn*" | grep -v "\.asn"
+   76  vim ./tools/asn2wrs.py 
+   77  vim ./tools/asn2deb 
+   78  vim ./tools/extract_asn1_from_spec.pl 
+   79  cat /root/pysctp/test_asn1.py 
+   80  ls /root/pysctp/x2ap_asn/
+   81  ls -lrth /root/pysctp/x2ap_asn/
+   82  cp /root/pysctp/x2ap_asn/* /root/pysctp/
+   83  w
+   84  cd ..
+   85  git clone https://gitlab.eurecom.fr/cuixf1/openairinterface5g.git
+   86  rg asn1tostruct.py
+   87  find . -name asn1tostruct.py
+   88  diff ./openairinterface5g/openair2/X2AP/MESSAGES/ASN1/asn1tostruct.py ./openairinterface5g/cmake_targets/tools/asn1tostruct.py
+   89  diff ./openairinterface5g/openair2/X2AP/MESSAGES/ASN1/asn1tostruct.py ./openairinterface5g/openair3/S1AP/MESSAGES/ASN1/asn1tostruct.py
+   90  cd openairinterface5g/
+   91  rg endcX2Setup
+   92  rg endc
+   93  rg ENDC
+   94  rg -i ENDC
+   95  rg -i ENDC | grep openair2
+   96  rg endcX2Setup
+   97  rg -i endcX2Setup
+   98  rg -i x2Setup
+   99  rg -i x2Setup | grep -v asn
+  100  find . -name X2ap-X2SetupResponse.c
+  101  find . -name X2SetupResponse.c
+  102  find . -name *X2SetupResponse*
+  103  find . -name "X2ap-X2SetupResponse.c"
+  104  find . -name "*X2*"
+  105  rg X2SetupResponse
+  106  find . -name "X2SetupResponse.c"
+  107  find . -name "SetupResponse.c"
+  108  vim openair2/X2AP/MESSAGES/ASN1/R.UNKNOWN/Makefile.inc 
+  109  cd /root/
+  110  git clone https://github.com/mitshell/libmich.git
+  111  cd libmich/
+  112  python3 setup.py install --dry-run
+  113  pip3 install utils
+  114  python3 setup.py install --dry-run
+  115  pip3 install parsers
+  116  python setup.py install --dry-run
+  117  python3 setup.py install --dry-run
+  118  pip3 install parsers
+  119  pip3 install parsers*
+  120  python3 setup.py install --dry-run
+  121  ls
+  122  tree libmich/
+  123  rg X2AP_36423-c10
+  124  ls libmich/asn1/asn/
+  125  ls libmich/asn1/asn/X2AP_36423-c10/
+  126  find /root/wireshark-3.2.5 -name "*.asn"
+  127  find /root/wireshark-3.2.5 -name "*.asn" | grep x2
+  128  ls libmich/asn1/asn/X2AP_36423-c10/
+  129  cp /root/wireshark-3.2.5/epan/dissectors/asn1/x2ap/ libmich/asn1/asn/
+  130  cp -r /root/wireshark-3.2.5/epan/dissectors/asn1/x2ap/ libmich/asn1/asn/
+  131  ls libmich/asn1/asn/X2AP_36423-c10/
+  132  ls libmich/asn1/asn/
+  133  ls libmich/asn1/asn/x2ap/  libmich/asn1/asn/X2AP_36423-f70
+  134  mv libmich/asn1/asn/x2ap/  libmich/asn1/asn/X2AP_36423-f70
+  135  ls libmich/asn1/asn/
+  136  vim libmich/asn1/asn/X2AP_36423-f70/X2AP-Constants.asn
+  137  cd libmich/asn1/asn/X2AP_36423-f70/
+  138  ls
+  139  rm -rf CMakeLists.txt packet-x2ap-template.c packet-x2ap-template.h x2ap.cnf 
+  140  ls
+  141  ls ../X2AP_36423-c10/
+  142  ls
+  143  ls ../X2AP_36423-c10/
+  144  cp ../X2AP_36423-c10/load.txt .
+  145  ls
+  146  ls ../X2AP_36423-c10/
+  147  vim load.txt 
+  148  rg X2AP_36423-c10
+  149  cd ../../../
+  150  rg X2AP_36423-c10
+  151  pwd
+  152  cd ../
+  153  rg X2AP_36423-c10
+  154  vim libmich/asn1/processor.py
+  155  python setup.py install --dry-run
+  156  vim libmich/asn1/processor.py
+  157  python setup.py install --dry-run
+  158  rg id-PDCPChangeIndication
+  159  vim libmich/asn1/asn/X2AP_36423-f70/X2AP-Constants.asn
+  160  vim libmich/asn1/asn/X2AP_36423-f70/X2AP-PDU-Contents.asn
+  161  rg PDCPChangeIndication
+  162  rg id-PDCPChangeIndication
+  163  vim libmich/asn1/asn/X2AP_36423-f70/X2AP-Constants.asn 
+  164  python setup.py install --dry-run
+  165  rg id-ServedEUTRAcells
+  166  ls /root/libmich/libmich/asn1/modules/RANAP.pck
+  167  rm -rf  /root/libmich/libmich/asn1/modules/X2AP*
+  168  python setup.py install --dry-run
+  169  rg X2AP-CommonDataTypes
+  170  diff libmich/asn1/asn/X2AP_36423-f70/X2AP-Constants.asn libmich/asn1/asn/X2AP_36423-c10/X2AP-Constants.asn
+  171  vim libmich/asn1/asn/X2AP_36423-c10/X2AP-Constants.asn 
+  172  python setup.py install --dry-run
+  173  python setup.py -h
+  174  python setup.py install --dry-run --verbose
+  175  grep -Hnr "id-PDCPChangeIndication" .
+  176  vim ./libmich/asn1/asn/X2AP_36423-f70/X2AP-Constants.asn
+  177  python setup.py install --dry-run --verbose
+  178  fg
+  179  grep -Hnr "id-PDCPChangeIndication" .
+  180  vim ./libmich/asn1/asn/X2AP_36423-f70/X2AP-PDU-Contents.asn
+  181  python setup.py install --dry-run --verbose
+  182  fg
+  183  rg ServedEUTRAcellsENDCX2ManagementList
+  184  jobs
+  185  fg 1
+  186  fg 2
+  187  fg
+  188  python setup.py install --dry-run --verbose
+  189  fg
+  190  python setup.py install --dry-run --verbose
+  191  fg
+  192  rg ENDC
+  193  fg
+  194  python setup.py install --dry-run --verbose
+  195  fg
+  196  python setup.py install --dry-run --verbose
+  197  fg
+  198  python setup.py install --dry-run --verbose
+  199  fg
+  200  python setup.py install --dry-run --verbose
+  201  fg
+  202  python setup.py install --dry-run --verbose
+  203  fg
+  204  python setup.py install --dry-run --verbose
+  205  fg
+  206  python setup.py install --dry-run --verbose
+  207  fg
+  208  python setup.py install --dry-run --verbose
+  209  rg id-ServedEUTRAcellsENDCX2ManagementList
+  210  vim libmich/asn1/asn/X2AP_36423-f70/X2AP-PDU-Contents.asn
+  211  python setup.py install --dry-run --verbose
+  212  rg NoneType
+  213  rg ENDCX2ManagementList
+  214  rg ENDCConfUpd
+  215  jobs
+  216  fg 2
+  217  rg ENDCConfUpd
+  218  rg ENDCX2ManagementList
+  219  python setup.py install --dry-run --verbose
+  220  rg ENDC
+  221  rg ENDC > a.txt
+  222  vim a.txt 
+  223  rg ENDCX2Management
+  224  rg ENDCConf
+  225  rg ENDCX2Management
+  226  jobs
+  227  fg 2
+  228  python setup.py install --dry-run --verbose
+  229  vim /root/libmich/libmich/asn1/processor.py
+  230  python setup.py install --dry-run --verbose
+  231  fg
+  232  python setup.py install --dry-run --verbose
+  233  fg
+  234  python setup.py install --dry-run --verbose
+  235  fg
+  236  grep -Hnr "------- debug  -------" .
+  237  fg
+  238  python setup.py install --dry-run --verbose
+  239  grep -Hnr "DASH" .
+  240  fg
+  241  python setup.py install --dry-run --verbose
+  242  fg
+  243  python setup.py install --dry-run --verbose
+  244  git diff
+  245  vim b/libmich/asn1/processor.py
+  246  vim libmich/asn1/processor.py
+  247  jobs
+  248  fg 3
+  249  python setup.py install --dry-run --verbose
+  250  rg "RRCTransfer,"
+  251  vim libmich/asn1/asn/X2AP_36423-f70/X2AP-PDU-Descriptions.asn 
+  252  fg
+  253  python setup.py install --dry-run --verbose
+  254  fg
+  255  python setup.py install --dry-run --verbose
+  256  fg
+  257  jobs
+  258  yum install dos2unix
+  259  dos2unix libmich/asn1/asn/X2AP_36423-f70/*
+  260  python setup.py install --dry-run --verbose
+  261  fg
+  262  python setup.py install --dry-run --verbose
+  263  rg "RRCTransfer,"
+  264  vim libmich/asn1/asn/X2AP_36423-f70/X2AP-PDU-Descriptions.asn 
+  265  python setup.py install --dry-run --verbose
+  266  fg
+  267  python setup.py install --dry-run --verbose
+  268  rg RRCTransfer
+  269  fg
+  270  rg RRCTransfer
+  271  python setup.py install --dry-run --verbose
+  272  fg
+  273  python setup.py install --dry-run --verbose
+  274  fg
+  275  python setup.py install --dry-run --verbose
+  276  fg
+  277  python setup.py install --dry-run --verbose
+  278  rg ENDC
+  279  rg ENDCX2
+  280  cp -R ibmich/asn1/asn/X2AP_36423-f70 ~/
+  281  cp -r ibmich/asn1/asn/X2AP_36423-f70 ~/
+  282  cp -r libmich/asn1/asn/X2AP_36423-f70 ~/
+  283  ls ~/X2AP_36423-f70/
+  284  cd libmich/asn1/asn/X2AP_36423-f70
+  285  rm -rf *.asn
+  286  cp  /root/wireshark-3.2.5/epan/dissectors/asn1/x2ap/*.asn .
+  287  ls
+  288  python setup.py install --dry-run --verbose
+  289  cd -
+  290  python setup.py install --dry-run --verbose
+  291  python3 setup.py install --dry-run --verbose
+  292  jobs
+  293  fg 3
+  294  fg
+  295  rg parsers
+  296  python3 setup.py install --dry-run --verbose
+  297  vim /root/libmich/preinstall.py
+  298  ls libmich/asn1/
+  299  python3 setup.py install --dry-run --verbose
+  300  pwd
+  301  ls /root/libmich/libmich/asn1/
+  302  export PYTHONPATH=/root/libmich/libmich/asn1/
+  303  python3 setup.py install --dry-run --verbose
+  304  vim /root/libmich/libmich/core/element.py
+  305  ls
+  306  unset PYTHONPATH
+  307  echo PYTHONPATH
+  308  echo $PYTHONPATH
+  309  cd ..
+  310  ls
+  311  git clone https://github.com/P1sec/pycrate.git
+  312  cd pycrate/
+  313  ls
+  314  python3 setup.py install --dry-run
+  315  python3 setup.py -h
+  316  python3 setup.py install
+  317  python setup.py install
+  318  ls
+  319  rg X2AP
+  320  rg X2AP | grep "\.py"
+  321  405
+  322  vim pycrate_corenet/Server.py 
+  323  pycrate_corenet/Server.py
+  324  python pycrate_corenet/Server.py
+  325  python3 pycrate_corenet/Server.py
+  326  python pycrate_corenet/Server.py
+  327  cd pycrate_corenet/
+  328  ls
+  329  python Server
+  330  python Server.py 
+  331  ls
+  332  python3 Server.py 
+  333  vim Server.py 
+  334  ls ../test
+  335  cd ..
+  336  ls
+  337  cd test
+  338  vim test_core.py 
+  339  vim test_asn1rt_mod.py 
+  340  vim res/s1ap_pcapr.readme.txt 
+  341  vim res/s1ap_pcapr.json 
+  342  vim test_s1ap.py 
+  343  pytho3 test_s1ap.py 
+  344  python3 test_s1ap.py 
+  345  vim res/s1ap_pcapr.json 
+  346  fg
+  347  python test_s1ap.py 
+  348  vim
+  349  fg
+  350  python3 test_s1ap.py 
+  351  fg
+  352  python test_s1ap.py 
+  353  fg
+  354  python3 test_s1ap.py 
+  355  fg
+  356  ls
+  357  cd ../
+  358  ls
+  359  git diff test.py 
+  360  vim test.py 
+  361  vim pycrate_corenet/Server.py 
+  362  jobs
+  363  fg 6
+  364  jobs
+  365  fg 5
+  366  fg
+  367  jobs
+  368  git status
+  369  rm -rf pycrate_asn1dir/.X2AP.py.swp
+  370  rm -rf pycrate_asn1rt/.asnobj.py.swp
+  371  git status
+  372  git pull
+  373  ls
+  374  cp test.py epc.py
+  375  vim epc.py 
+  376  python3 test.py 
+  377  fg
+  378  python3 epc.py 
+  379  python epc.py 
+  380  cp epc.py ../
+  381  cd ..
+  382  python epc.py 
+  383  vim epc.py 
+  384  python epc.py 
+  385  python3 epc.py 
+  386  vim epc.py 
+  387  cd pycrate/
+  388  python3 setup.py install
+  389  ls
+  390  python epc.py 
+  391  ls
+  392  vim setup.py 
+  393  pip install lxml
+  394  pip3 install lxml
+  395  fg
+  396  pip3 install CryptoMobile
+  397  cd ..
+  398  git clone https://github.com/P1sec/CryptoMobile.git
+  399  cd CryptoMobile/
+  400  ls
+  401  vim setup.py 
+  402  python3 setup.py install --dry-run
+  403  python3 setup.py install
+  404  python setup.py install --dry-run
+  405  python setup.py install
+  406  python epc.py 
+  407  cd ../pycrate/
+  408  python epc.py 
+  409  python3 epc.py 
+  410  python3 setup.py install
+  411  python setup.py install
+  412  python3 epc.py 
+  413  vim epc.py 
+  414  jobs
+  415  fg 2
+  416  fg
+  417  vim epc.py 
+  418  python3 epc.py 
+  419  pip3 install cryptography
+  420  python3 epc.py 
+  421  pip2 install cryptography
+  422  pip install cryptography
+  423  ls
+  424  jobs
+  425  vim epc.py 
+  426  python3 epc.py 
+  427  cd ../
+  428  python3 epc.py 
+  429  vim /root/pycrate/pycrate_corenet/Server.py 
+  430  jobs
+  431  fg 1
+  432  fg
+  433  python3 epc.py 
+  434  rg 10.3.1.1
+  435  rg 10.3.1.1 pycrate/
+  436  rg "10\.3\.1\.1" pycrate/
+  437  fg
+  438  python3 epc.py 
+  439  netstat -anp
+  440  netstat -anp | grep 36422
+  441  cd /root/pycrate/
+  442  ls -lrth
+  443  find . -name *.log
+  444  rg INF
+  445  rg "INF "
+  446  rg "INF " | grep log
+  447  ls /tmp/
+  448  tail -F /tmp/corenet.log 
+  449  ls -Lrth /tmp/
+  450  ls -lrth /tmp/
+  451  tail -F /tmp/corenet.log 
+  452  ls
+  453  vim ../pysctp/test_asn1.py 
+  454  ls -lrth ../pysctp/
+  455  vim ../pysctp/test_remote_cnx.py 
+  456  tail -F /tmp/corenet.log 
+  457  fg
+  458  vim ../pysctp/test_remote_cnx.py 
+  459  tail -F /tmp/corenet.log 
+  460  ps aux | grep vim
+  461  kill -9 15608
+  462  tail -F /tmp/corenet.log 
+  463  vim ~/.bash_profile 
+  464  source ~/.bash_profile 
+  465  cd pycrate/
+  466  which python
+  467  /usr/bin/python -V
+  468  ls -lrth /usr/bin/python
+  469  which python3
+  470  ls -lrth /usr/bin/python3
+  471  ls -lrth /usr/bin/python
+  472  ls -lrth /usr/bin/python2
+  473  which pippip
+  474  which pip
+  475  /usr/bin/pip -V
+  476  pyhton3
+  477  python3 setup.py build
+  478  mv epc.py ENDCSim.p
+  479  mv ENDCSim.p ENDCSim.py
+  480  python3 setup.py build; python3 ENDCSim.py 
+  481  source ~/.bash_profile
+  482  vim ~/.vimrc 
+  483  vim
+  484  vim ~/.vimrc 
+  485  mkdir -p ~/.vim/autoload/
+  486  vim ~/.vim/autoload/plug.vim
+  487  = s:lines(s:system('git rev-parse HEAD 2>&1', a:spec.dir))
+  488        let sha = result[-1]
+  489        if v:shell_error;         let err = join(add(result, 'PlugClean required.'), "\n")
+  490        elseif scp dmahto@onyx:/a/Workspaces/sahmadash_match(sha, a:spec.commit)
+  491          let err = join([printf('Invalid HEAD (expected: %s, actual: %s)',
+  492                                \ a:spec.commit[:6], sha[:6]),
+  493                        \ 'PlugUpdate required.'], "\n")
+  494        endif
+  495      elseif a:check_branch
+  496        let branch = result[0]
+  497        " Check tag
+  498        if has_key(a:spec, 'tag')
+  499          let tag = s:system_chomp('git describe --exact-match --tags HEAD 2>&1', a:spec.dir)
+  500            let err = printf('Invalid tag: %s (expected: %s). Try PlugUpdate.',
+  501                  \ (empty(tag) ? 'N/A' : tag), a:spec.tag)
+  502          endif
+  503        " Check branch
+  504        elseif a:spec.branch !=# branch
+  505          let err = printf('Invalid branch: %s (expected: %s). Try PlugUpdate.',
+  506                \ branch, a:spec.branch)
+  507        endif
+  508        if empty(err)
+  509          let [ahead, behind] = split(s:lastline(s:system([
+  510          \ 'git', 'rev-list', '--count', '--left-right',
+  511          \ printf('HEAD...origin/%s', a:spec.branch)
+  512          \ ], a:spec.dir)), '\t')
+  513            if behind;             " Only mention PlugClean if diverged, otherwise it's likely to be
+  514              " pushable (and probably not that messed up).
+  515              let err = printf(
+  516                    \ .'Backup local changes and run PlugClean and PlugUpdate to reinstall it.', a:spec.branch, ahead, behind)
+  517            else
+  518              let err = printf("Ahead of origin/%s by %d commit(s).\n"
+  519                    \ .'Cannot update until local changes are pushed.',
+  520                    \ a:spec.branch, ahead)
+  521            endif
+  522          endif
+  523        endif
+  524      endif
+  525    else
+  526      let err = 'Not found'
+  527    endif
+  528    return [err, err =~# 'PlugClean']
+  529  endfunction
+  530  function! s:rm_rf(dir)
+  531    if isdirectory(a:dir)
+  532      return s:system(s:is_win
+  533      \ ? 'rmdir /S /Q '.plug#shellescape(a:dir)
+  534      \ : ['rm', '-rf', a:dir])
+  535    endif
+  536  endfunction
+  537  function! s:clean(force)
+  538    call s:prepare()
+  539    call append(0, 'Searching for invalid plugins in '.g:plug_home)
+  540    call append(1, '')
+  541    " List of valid directories
+  542    let dirs = []
+  543    let errs = {}
+  544    let [cnt, total] = [0, len(g:plugs)]
+  545    for [name, spec] in items(g:plugs)
+  546        call add(dirs, spec.dir)
+  547      else
+  548        let [err, clean] = s:git_validate(spec, 1)
+  549        if clean
+  550          let errs[spec.dir] = s:lines(err)[0]
+  551        else
+  552          call add(dirs, spec.dir)
+  553        endif
+  554      endif
+  555      let cnt += 1
+  556      call s:progress_bar(2, repeat('=', cnt), total)
+  557      normal! 2G
+  558      redraw
+  559    endfor
+  560    let allowed = {}
+  561    for dir in dirs
+  562      let allowed[s:dirpath(s:plug_fnamemodify(dir, ':h:h'))] = 1
+  563      let allowed[dir] = 1
+  564      for child in s:glob_dir(dir)
+  565        let allowed[child] = 1
+  566      endfor
+  567    endfor
+  568    let todo = []
+  569    let found = sort(s:glob_dir(g:plug_home))
+  570      let f = remove(found, 0)
+  571        call add(todo, f)
+  572        call append(line('$'), '- ' . f)
+  573        if has_key(errs, f)
+  574          call append(line('$'), '    ' . errs[f])
+  575        endif
+  576        let found = filter(found, 'stridx(v:val, f) != 0')
+  577      end
+  578    endwhile
+  579    4
+  580    redraw
+  581    if empty(todo)
+  582      call append(line('$'), 'Already clean.')
+  583    else
+  584      let s:clean_count = 0
+  585      call append(3, ['Directories to delete:', ''])
+  586      redraw!
+  587      if a:force || s:ask_no_interrupt('Delete all directories?')
+  588        call s:delete([6, line('$')], 1)
+  589      else
+  590        call setline(4, 'Cancelled.')
+  591        nnoremap <silent> <buffer> d :set opfunc=<sid>delete_op<cr>g@
+  592        nmap     <silent> <buffer> dd d_
+  593        xnoremap <silent> <buffer> d :<c-u>call <sid>delete_op(visualmode(), 1)<cr>
+  594        echo 'Delete the lines (d{motion}) to delete the corresponding directories'
+  595      endif
+  596    endif
+  597    4
+  598    setlocal nomodifiable
+  599  endfunction
+  600  function! s:delete_op(type, ...)
+  601    call s:delete(a:0 ? [line("'<"), line("'>")] : [line("'["), line("']")], 0)
+  602  endfunction
+  603  function! s:delete(range, force)
+  604    let [l1, l2] = a:range
+  605    let force = a:force
+  606    let err_count = 0
+  607    while l1 <= l2
+  608      let line = getline(l1)
+  609      if line =~ '^- ' && isdirectory(line[2:])
+  610        execute l1
+  611        redraw!
+  612        let answer = force ? 1 : s:ask('Delete '.line[2:].'?', 1)
+  613        let force = force || answer > 1
+  614        if answer
+  615          let err
+  616          setlocal modifiab
+  617          if empty(err)
+  618            call setline(l1, '~'.line[1:])
+  619            let s:clean_count += 1
+  620          else
+  621            delete _
+  622            call append(l1 - 1, s:format_message('x', line[1:], err))
+  623            let l2 += len(s:lines(err))
+  624            let err_count += 1
+  625          endif
+  626          let msg = print
+  627          if err_count > 0
+  628            let msg .= printf(' Failed to remove %d directories.', er
+  629          endif
+  630          call setline(4,
+  631          setlocal nomodifiable
+  632        endif
+  633      endif
+  634      let l1 += 1
+  635    endwhile
+  636  endfunction
+  637  function! s:upgrade()
+  638    echo 'Downloa
+  639    redraw
+  640    let tmp = s:plug_tempname()
+  641    let new = tmp . '/plug.vim'
+  642    try
+  643      let out = s:system(['git', 'clone', '--depth', '1', s
+  644      if v:shell_error
+  645        return s:err('Error upgr
+  646      endif
+  647      if readfile(s:me) ==# readfile(new)
+  648        echo 'vim-plug is already up-to-date'
+  649        return 0
+  650      else
+  651        call rename(s:me, s:me . '.old')
+  652        call rename(new, s:me)
+  653        unlet g:loaded_plug
+  654        echo 'vim-plug has been upgraded'
+  655        return 1
+  656      endif
+  657    finally
+  658      silent! call s:rm_rf(tmp)
+  659    endtry
+  660  endfunction
+  661  function! s:upgrade_specs()
+  662    for spec in values(g:plugs)
+  663      let spec.frozen = get(spec, 'frozen', 0)
+  664    endfor
+  665  endfunction
+  666  function! s:status()
+  667    call s:prepare()
+  668    call append(0, 'Checking plugins')
+  669    call append(1, '')
+  670    let ecnt = 0
+  671    let unloaded = 0
+  672    let [cnt, total] = [0, le
+  673    for [name, spec] in items(g:plugs)
+  674      let is_dir = isd
+  675      if has_ke
+  676        if is
+  677          l
+  678          let [valid, msg] = [empt
+  679        e
+  680          let [valid, msg] = [0, 'Not found. Try 
+  681        endif
+  682      else
+  683        if is_dir
+  684          let [valid, msg] = [1, 'OK']
+  685        else
+  686          let [valid, msg] = [0, 'Not found.']
+  687        endif
+  688      endif
+  689      let c
+  690      let ecn
+  691      " `s:loaded` entry can be missing if PlugUpgraded
+  692      if is_dir && get(s:loaded, name, -1) == 0
+  693        let 
+  694        let msg .= ' (not loaded)'
+  695      endif
+  696      call s:progress_bar(2, repeat('=', cnt), total)
+  697      call append(3, s:format_message(valid ? '-' : 'x', name, msg))
+  698      normal! 2G
+  699      redraw
+  700    endfor
+  701    call setline(1, 'Finished. '.ecnt.' error(s).')
+  702    normal! gg
+  703    setlocal nomodifiable
+  704    if unloaded;     echo "Press 'L' on each line to load plugin, or 'U' to update";     nnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>
+  705      xnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>
+  706    end
+  707  endfunction
+  708  function! s:extract_name(str, prefix, suffix)
+  709    return matchstr(a:str, '^'.a:prefix.' \zs[^:]\+\ze:.*'.a:suffix.'$')
+  710  endfunction
+  711  function! s:status_load(lnum)
+  712    let line = getline(a:lnum)
+  713    let name = s:extract_name(line, '-', '(not loaded)')
+  714      call plug#load(name)
+  715      setlocal modifiable
+  716      call setline(a:lnum, substitute(line, ' (not loaded)$', '', ''))
+  717      setlocal nomodifiable
+  718    endif
+  719  endfunction
+  720  function! s:status_update() range
+  721    let lines = getline(a:firstline, a:lastline)
+  722    let names = filter(map(lines, 's:extract_name(v:val, "[x-]", "")'), '!empty(v:val)')
+  723      echo
+  724      execute 'PlugUpdate' join(names)
+  725    endif
+  726  endfunction
+  727  function! s:is_preview_window_open()
+  728    silent! wincmd P
+  729    if &previewwindow
+  730      wincmd p
+  731      return 1
+  732    endif
+  733  endfunction
+  734  function! s:find_name(lnum)
+  735    for lnum in reverse(range(1, a:lnum))
+  736      let line = getline(lnum)
+  737      if empty(line)
+  738        return ''
+  739      endif
+  740      let name = s:extract_name(line, '-', '')
+  741        return name
+  742      endif
+  743    endfor
+  744    return ''
+  745  endfunction
+  746  function! s:preview_commit()
+  747    if b:plug_preview < 0;   endif;    let sha = matchstr(getline('.'), '^  \X*\zs[0-9a-f]\{7,9}')
+  748    if empty(sha)
+  749      return
+  750    endif
+  751    let name = s:find_name(line('.'))
+  752      return
+  753    endif
+  754      execute g:plug_pwindow
+  755      execute 'e' sha
+  756    else
+  757      execute 'pedit' sha
+  758      wincmd P
+  759    endif
+  760    setlocal previewwindow filetype=git buftype=nofile nobuflisted modifiable
+  761    let batchfile = ''
+  762    t
+  763  ls
+  764  wget https://github.com/junegunn/vim-plug/archive/master.zip
+  765  gunzip master.zip 
+  766  unzip master.zip 
+  767  cp vim-plug-master/plug.vim ~/.vim/autoload/
+  768  fg
+  769  vim
+  770  vim ~/.vimrc 
+  771  vim
+  772  vim ~/.vimrc 
+  773  curl -sL install-node.now.sh/lts | bash
+  774  vim ~/.vimrc 
+  775  reset
+  776  pip3 install yarn
+  777  fg
+  778  vim ~/.vimrc 
+  779  cd ~/.vim/plugged/coc.nvim/
+  780  yarn install --frozen-lockfile
+  781  yum install yarn
+  782  python yarn install --frozen-lockfile
+  783  python3 yarn install --frozen-lockfile
+  784  curl -o- -L https://yarnpkg.com/install.sh | bash
+  785  jobs
+  786  vim ~/.vimrc 
+  787  reset
+  788  yarn install --frozen-lockfile
+  789  ls
+  790  curl -o- -L https://yarnpkg.com/install.sh | bash
+  791  /root/.yarn/bin/yarn  install --frozen-lockfile
+  792  vim ~/.vimrc 
+  793  cd /root/pycrate/
+  794  ls
+  795  vim pycrate_corenet/ENDCServer.py 
+  796  pip3 install jedi
+  797  vim pycrate_corenet/ENDCServer.py 
+  798  yum install ctags
+  799  ls
+  800  yum install ctags
+  801  vim pycrate_corenet/ENDCServer.py 
+  802  source ~/.bash_profile
+  803  gg
+  804  ff
+  805  ls
+  806  ff epc.py
+  807  ff ENDC.*
+  808  ff ENDC*
+  809  vim ~/.vimrc 
+  810  fg
+  811  vim ~/.bash_profile 
+  812  source ~/.bash_profile 
+  813  fg
+  814  stty -ixon
+  815  fg
+  816  source ~/.bash_profile
+  817  fg
+  818  doit 
+  819  fg
+  820  doit 
+  821  vim pycrate_corenet/ENDCServer.py 
+  822  fg
+  823  openvt 
+  824  openvt -h
+  825  openvt -c 3 -e ls
+  826  date > /dev/pts/3
+  827  echo `python3 setup.py build; python3 ENDCSim.py` /dev/pts/3
+  828  echo `python3 setup.py build; python3 ENDCSim.py` > /dev/pts/3
+  829  fg
+  830  vim ~/.bash_profile 
+  831  source ~/.bash_profile
+  832  doit
+  833  tty
+  834  ls 
+  835  python3 setup.py build; python3 ENDCSim.py 
+  836  sleep 2; python3 setup.py build; python3 ENDCSim.py 
+  837  doit 
+  838  vim ~/.bash_profile 
+  839  jobs
+  840  fg
+  841  vim ~/.vimrc 
+  842  vim ~/.vim/vim_bash_go_test
+  843  fg
+  844  chmod 777 ~/.vim/vim_bash_go_test
+  845  vim ~/.vim/vim_bash_go_test
+  846  fg
+  847  pwd
+  848  wget https://gist.github.com/lidio601/62b264e11a1e630a7278#file-ttyecho-c
+  849  ls
+  850  vim 62b264e11a1e630a7278 
+  851  rm -rf 62b264e11a1e630a7278 
+  852  vim ptsecho.c
+  853  make ptsecho.c 
+  854  gcc -o  ptsecho.c 
+  855  gcc -c  ptsecho.c 
+  856  ls
+  857  rm ptsecho.o 
+  858  gcc  -o ptsecho ptsecho.c 
+  859  ./ptsecho 
+  860  ./ptsecho -n /dev/pts/3 ls
+  861  fg
+  862  ./ptsecho -n /dev/pts/3 "python3 setup.py build; python3 ENDCSim.py"
+  863  cp ptsecho /usr/local/bin/
+  864  ptsecho -n /dev/pts/3 "kill -s SIGINT"
+  865  ptsecho /dev/pts/3 "kill -s SIGINT"
+  866  ptsecho /dev/pts/3 kill -s SIGINT
+  867  ps aux | grep python
+  868  pkill
+  869  pkill --help
+  870  pkill "python3 ENDCSim.py"
+  871  pkill -x "python3 ENDCSim.py"
+  872  pkill
+  873  pkill ENDCSim
+  874  ps aux | grep python
+  875  ptsecho -n /dev/pts/3 "python3 setup.py build; python3 ENDCSim.py"
+  876  ps aux | grep python
+  877  ps aux | grep "python3 ENDCSim.py"
+  878  pgrep "python3 ENDCSim.py"
+  879  pgrep --help
+  880  pgrep "ENDCSim.py"
+  881  ps aux | grep "python3 ENDCSim.py"
+  882  pgrep "ENDCSim"
+  883  pgrep "python"
+  884  pgrep "python3"
+  885  pgrep "python3.*"
+  886  pgrep "python3.*.ENDC"
+  887  pgrep "python3.ENDC"
+  888  pgrep -x "python3 ENDCSim.py"
+  889  pgrep -f "python3 ENDCSim.py"
+  890  kill -INT 17909
+  891  ptsecho -n /dev/pts/3 "python3 setup.py build; python3 ENDCSim.py"
+  892  pgrep -f "python3 ENDCSim.py" | xargs kill -INT 
+  893  fg
+  894  htop
+  895  tail -F /tmp/corenet.log 
+  896  vim ~/.vimrc 
+  897  tail -F /tmp/corenet.log 
+  898  tty
+  899  vim ~/.vim/vim_bash_go_test
+  900  :q
+  901  cat ~/.bashrc 
+  902  cat ~/.bash_profile 
+  903  cd /a/workspace/dmahto/sgnb_add_crash/SW-14641/EB-1025.epcmgr.9680.gz.200814.10_41_40
+  904  alias
+  905  ip a
+  906  tty
+  907  tail -F /tmp/corenet.log 
+  908  tty
+  909  sleep 2; python3 setup.py build; python3 ENDCSim.py 
+  910  cd pycrate/
+  911  sleep 2; python3 setup.py build; python3 ENDCSim.py 
+  912  vim pycrate_corenet/ENDCServer.py 
+  913  tty
+  914  vim ~/.vim
+  915  tty
+  916  ls
+  917  git status
+  918  vim pycrate_corenet/ENDCServer.py 
+  919  vim ~/.vimrc 
+  920  fg
+  921  vim pycrate_corenet/ENDCServer.py 
+  922  python
+  923  ip a
+  924  ip a | grep 243
+  925  :q
+  926  tmux ls
+  927  tmux -ls
+  928  tmux a
+  929  ls
+  930  car epc.py 
+  931  cat epc.py 
+  932  tmux new -s pycrate-testing
+  933  tmux -V
+  934  scp dmahto@10.12.70.76:~/.tmux.conf ~/
+  935  tmux new -s pycrate-testing
+  936  vim ~/.tmux.conf 
+  937  tmux new -s pycrate-testing
+  938  tmux a
+  939  tmux 
+  940  uptime
+  941  tmux ls
+  942  tmux a
+  943  ifconfig 
+  944  ls
+  945  vim epc.py 
+  946  ls
+  947  ip a s
+  948  cat /etc/sysconfig/network-scripts/ifcfg-eth0 
+  949  ls
+  950  python3 epc.py 
+  951  ls
+  952  python epc.py 
+  953  cd pycrate/
+  954  ls
+  955  python3 ENDCSim.py 
+  956  vim ENDCX2SetupResponse.txt
+  957  python3 ENDCSim.py 
+  958  vim ENDCX2SetupResponse.txt
+  959  python3 ENDCSim.py 
+  960  vim ENDCSim.py 
+  961  python3 ENDCSim.py 
+  962  ls -lrth
+  963  vim ENDCX2SetupResponse.txt
+  964  vim ENDCSim.py
+  965  vim pycrate_corenet/ENDCServer.py 
+  966  vim ENDCSim.py
+  967  fg
+  968  git diff 
+  969  git diff > a.txt
+  970  vim a.txt 
+  971  ls
+  972  vim a.txt 
+  973  ls pycrate_corenet/
+  974  vim pycrate_corenet/ENDCServer.py 
+  975  python3 pycrate_corenet/ENDCServer.py 
+  976  cd pycrate_core
+  977  cd ../pycrate_corenet/
+  978  ls
+  979  python3 ENDCServer.py 
+  980  histort
+  981  cd ../
+  982  ls
+  983  history > history.txt
+  984  vim history.txt 
+  985  ls ~
+  986  fg
+  987  ifconfig 
+  988  find / -name telnet_reader.py
+  989  ls
+  990  cd pycrate/
+  991  ls
+  992  vim license.txt 
+  993  vim history.txt 
+  994  history
+  995  history > history_new.txt

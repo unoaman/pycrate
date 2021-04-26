@@ -1,0 +1,82 @@
+diff --git a/pycrate_corenet/utils.py b/pycrate_corenet/utils.py
+index 3e264f9..e67b86b 100644
+--- a/pycrate_corenet/utils.py
++++ b/pycrate_corenet/utils.py
+@@ -44,7 +44,7 @@ from struct    import pack, unpack
+ from socket    import AF_INET, AF_INET6, AF_PACKET, ntohl, htonl, ntohs, htons, \
+                       inet_aton, inet_ntoa, inet_pton, inet_ntop
+ 
+-# SCTP support for NGAP / S1AP / HNBAP / RUA interfaces
++# SCTP support for NGAP / S1AP / X2AP / HNBAP / RUA interfaces
+ try:
+     import sctp
+ except ImportError as err:
+@@ -74,6 +74,7 @@ log('pycrate_corenet: loading all ASN.1 and NAS modules, be patient...')
+ from pycrate_asn1dir import NGAP
+ # to drive eNodeB and Home-eNodeB
+ from pycrate_asn1dir import S1AP
++from pycrate_asn1dir import X2AP
+ # to drive Home-NodeB
+ from pycrate_asn1dir import HNBAP
+ from pycrate_asn1dir import RUA
+@@ -121,6 +122,7 @@ ASN_GLOBAL = S1AP.GLOBAL.MOD
+ # ASN.1 PDU encoders / decoders
+ PDU_NGAP  = NGAP.NGAP_PDU_Descriptions.NGAP_PDU
+ PDU_S1AP  = S1AP.S1AP_PDU_Descriptions.S1AP_PDU
++PDU_X2AP  = X2AP.X2AP_PDU_Descriptions.X2AP_PDU
+ PDU_HNBAP = HNBAP.HNBAP_PDU_Descriptions.HNBAP_PDU
+ PDU_RUA   = RUA.RUA_PDU_Descriptions.RUA_PDU
+ PDU_RANAP = RANAP.RANAP_PDU_Descriptions.RANAP_PDU
+@@ -132,11 +134,13 @@ PDU_SS_Facility = SS.SS_Facility.Facility
+ # ASN.1 modules / objects
+ ASN_READY_NGAP  = Event()
+ ASN_READY_S1AP  = Event()
++ASN_READY_X2AP  = Event()
+ ASN_READY_HNBAP = Event()
+ ASN_READY_RUA   = Event()
+ ASN_READY_RANAP = Event()
+ ASN_READY_NGAP.set()
+ ASN_READY_S1AP.set()
++ASN_READY_X2AP.set()
+ ASN_READY_HNBAP.set()
+ ASN_READY_RUA.set()
+ ASN_READY_RANAP.set()
+@@ -175,6 +179,22 @@ def asn_s1ap_acquire():
+ def asn_s1ap_release():
+     ASN_READY_S1AP.set()
+ 
++def asn_x2ap_acquire():
++    if ASN_READY_X2AP.is_set():
++        ASN_READY_X2AP.clear()
++        return True
++    else:
++        ready = ASN_READY_X2AP.wait(ASN_ACQUIRE_TO)
++        if not ready:
++            # timeout, module is still locked
++            return False
++        else:
++            ASN_READY_X2AP.clear()
++            return True
++
++def asn_x2ap_release():
++    ASN_READY_X2AP.set()
++
+ def asn_hnbap_acquire():
+     if ASN_READY_HNBAP.is_set():
+         ASN_READY_HNBAP.clear()
+@@ -390,6 +410,7 @@ RAT_NR    = 'NR'
+ SCTP_PPID_HNBAP = 20
+ SCTP_PPID_RUA   = 19
+ SCTP_PPID_S1AP  = 18
++SCTP_PPID_X2AP  = 27
+ SCTP_PPID_NGAP  = 60
+ 
+ # HNB / ENB protocol identifiers
+@@ -397,6 +418,7 @@ PROTO_HNBAP = 'HNBAP'
+ PROTO_RUA   = 'RUA'
+ PROTO_RANAP = 'RANAP'
+ PROTO_S1AP  = 'S1AP'
++PROTO_X2AP  = 'X2AP'
+ PROTO_NGAP  = 'NGAP'
+ 
+ 

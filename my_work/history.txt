@@ -1,0 +1,172 @@
+  857  cd /root/pycrate/
+  858  ls
+  859  vim pycrate_corenet/ENDCServer.py 
+  860  pip3 install jedi
+  861  vim pycrate_corenet/ENDCServer.py 
+  862  yum install ctags
+  863  ls
+  864  yum install ctags
+  865  vim pycrate_corenet/ENDCServer.py 
+  866  source ~/.bash_profile
+  867  gg
+  868  ff
+  869  ls
+  870  ff epc.py
+  871  ff ENDC.*
+  872  ff ENDC*
+  873  vim ~/.vimrc 
+  874  fg
+  875  vim ~/.bash_profile 
+  876  source ~/.bash_profile 
+  877  fg
+  878  stty -ixon
+  879  fg
+  880  source ~/.bash_profile
+  881  fg
+  882  doit 
+  883  fg
+  884  doit 
+  885  vim pycrate_corenet/ENDCServer.py 
+  886  fg
+  887  openvt 
+  888  openvt -h
+  889  openvt -c 3 -e ls
+  890  date > /dev/pts/3
+  891  echo `python3 setup.py build; python3 ENDCSim.py` /dev/pts/3
+  892  echo `python3 setup.py build; python3 ENDCSim.py` > /dev/pts/3
+  893  fg
+  894  vim ~/.bash_profile 
+  895  source ~/.bash_profile
+  896  doit
+  897  tty
+  898  ls 
+  899  python3 setup.py build; python3 ENDCSim.py 
+  900  sleep 2; python3 setup.py build; python3 ENDCSim.py 
+  901  doit 
+  902  vim ~/.bash_profile 
+  903  jobs
+  904  fg
+  905  vim ~/.vimrc 
+  906  vim ~/.vim/vim_bash_go_test
+  907  fg
+  908  chmod 777 ~/.vim/vim_bash_go_test
+  909  vim ~/.vim/vim_bash_go_test
+  910  fg
+  911  pwd
+  912  wget https://gist.github.com/lidio601/62b264e11a1e630a7278#file-ttyecho-c
+  913  ls
+  914  vim 62b264e11a1e630a7278 
+  915  rm -rf 62b264e11a1e630a7278 
+  916  vim ptsecho.c
+  917  make ptsecho.c 
+  918  gcc -o  ptsecho.c 
+  919  gcc -c  ptsecho.c 
+  920  ls
+  921  rm ptsecho.o 
+  922  gcc  -o ptsecho ptsecho.c 
+  923  ./ptsecho 
+  924  ./ptsecho -n /dev/pts/3 ls
+  925  fg
+  926  ./ptsecho -n /dev/pts/3 "python3 setup.py build; python3 ENDCSim.py"
+  927  cp ptsecho /usr/local/bin/
+  928  ptsecho -n /dev/pts/3 "kill -s SIGINT"
+  929  ptsecho /dev/pts/3 "kill -s SIGINT"
+  930  ptsecho /dev/pts/3 kill -s SIGINT
+  931  ps aux | grep python
+  932  pkill
+  933  pkill --help
+  934  pkill "python3 ENDCSim.py"
+  935  pkill -x "python3 ENDCSim.py"
+  936  pkill
+  937  pkill ENDCSim
+  938  ps aux | grep python
+  939  ptsecho -n /dev/pts/3 "python3 setup.py build; python3 ENDCSim.py"
+  940  ps aux | grep python
+  941  ps aux | grep "python3 ENDCSim.py"
+  942  pgrep "python3 ENDCSim.py"
+  943  pgrep --help
+  944  pgrep "ENDCSim.py"
+  945  ps aux | grep "python3 ENDCSim.py"
+  946  pgrep "ENDCSim"
+  947  pgrep "python"
+  948  pgrep "python3"
+  949  pgrep "python3.*"
+  950  pgrep "python3.*.ENDC"
+  951  pgrep "python3.ENDC"
+  952  pgrep -x "python3 ENDCSim.py"
+  953  pgrep -f "python3 ENDCSim.py"
+  954  kill -INT 17909
+  955  ptsecho -n /dev/pts/3 "python3 setup.py build; python3 ENDCSim.py"
+  956  pgrep -f "python3 ENDCSim.py" | xargs kill -INT 
+  957  fg
+  958  htop
+  959  tail -F /tmp/corenet.log 
+  960  vim ~/.vimrc 
+  961  tail -F /tmp/corenet.log 
+  962  tty
+  963  vim ~/.vim/vim_bash_go_test
+  964  :q
+  965  cat ~/.bashrc 
+  966  cat ~/.bash_profile 
+  967  cd /a/workspace/dmahto/sgnb_add_crash/SW-14641/EB-1025.epcmgr.9680.gz.200814.10_41_40
+  968  alias
+  969  ip a
+  970  tty
+  971  tail -F /tmp/corenet.log 
+  972  tty
+  973  sleep 2; python3 setup.py build; python3 ENDCSim.py 
+  974  cd pycrate/
+  975  sleep 2; python3 setup.py build; python3 ENDCSim.py 
+  976  vim pycrate_corenet/ENDCServer.py 
+  977  tty
+  978  vim ~/.vim
+  979  tty
+  980  ls
+  981  git status
+  982  vim pycrate_corenet/ENDCServer.py 
+  983  vim ~/.vimrc 
+  984  fg
+  985  vim pycrate_corenet/ENDCServer.py 
+  986  python
+  987  ip a
+  988  ip a | grep 243
+  989  ls
+  990  vim epc.py 
+  991  ls
+  992  ip a s
+  993  cat /etc/sysconfig/network-scripts/ifcfg-eth0 
+  994  ls
+  995  python3 epc.py 
+  996  ls
+  997  python epc.py 
+  998  cd pycrate/
+  999  ls
+ 1000  python3 ENDCSim.py 
+ 1001  vim ENDCX2SetupResponse.txt
+ 1002  python3 ENDCSim.py 
+ 1003  vim ENDCX2SetupResponse.txt
+ 1004  python3 ENDCSim.py 
+ 1005  vim ENDCSim.py 
+ 1006  python3 ENDCSim.py 
+ 1007  ls -lrth
+ 1008  vim ENDCX2SetupResponse.txt
+ 1009  vim ENDCSim.py
+ 1010  vim pycrate_corenet/ENDCServer.py 
+ 1011  vim ENDCSim.py
+ 1012  fg
+ 1013  git diff 
+ 1014  git diff > a.txt
+ 1015  vim a.txt 
+ 1016  ls
+ 1017  vim a.txt 
+ 1018  ls pycrate_corenet/
+ 1019  vim pycrate_corenet/ENDCServer.py 
+ 1020  python3 pycrate_corenet/ENDCServer.py 
+ 1021  cd pycrate_core
+ 1022  cd ../pycrate_corenet/
+ 1023  ls
+ 1024  python3 ENDCServer.py 
+ 1025  histort
+ 1026  cd ../
+ 1027  ls
+ 1028  history > history.txt

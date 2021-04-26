@@ -1,0 +1,48 @@
+successfulOutcome : {
+  procedureCode 36,
+  criticality reject,
+  value ENDCX2SetupResponse: {
+    protocolIEs {
+      {
+        id 246,
+        criticality reject,
+        value RespondingNodeType-EndcX2Setup: respond-eNB : {
+          {
+            id 21,
+            criticality reject,
+            value GlobalENB-ID: {
+              pLMN-Identity '00F170'H,
+              eNB-ID macro-eNB-ID : '0006F'H
+            }
+          },
+          {
+            id 250,
+            criticality reject,
+            value ServedEUTRAcellsENDCX2ManagementList: {
+              {
+                servedEUTRACellInfo {
+                  pCI 200,
+                  cellId {
+                    pLMN-Identity '00F170'H,
+                    eUTRANcellIdentifier '0253837'H
+                  },
+                  tAC '0001'H,
+                  broadcastPLMNs {
+                    '00F170'H
+                  },
+                  eUTRA-Mode-Info fDD : {
+                    uL-EARFCN 20100,
+                    dL-EARFCN 2100,
+                    uL-Transmission-Bandwidth bw100,
+                    dL-Transmission-Bandwidth bw100
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
